@@ -30,6 +30,12 @@
 
 
 ---
+## צור קשר
+
+✉️ אם יש לכם שאלות, הצעות או עניין בשיתוף פעולה – מוזמנים לפנות אליי בדוא"ל:  
+yaakobov001@gmail.com
+
+---
 
 # 🔍 OCR Checker for Hebrew Religious Texts
 
@@ -58,6 +64,13 @@ Paste unvoweled Hebrew text and get character-level markings for potentially cor
 ### Tooltip with correction suggestions
 ![Tooltip suggestions](screenshots/tooltip_suggestions1.png)  
 🛠️ In the image: hovering over a character marked as incorrect opens a tooltip where the user can **mark the character as valid**, or **click one of the suggested corrections** to instantly replace the character.
+
+---
+
+## Contact
+
+✉️ For questions, suggestions, or collaboration opportunities – feel free to reach out via email:  
+yaakobov001@gmail.com
 
 ---
 
