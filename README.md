@@ -36,6 +36,24 @@ Powered by a custom-trained Transformer model at the character level – no sour
 ## Example
 Paste unvoweled Hebrew text and get character-level markings for potentially corrupted letters, even if they look correct in isolation.
 
+
+## הדגמה חזותית
+
+### סימון תווים חשודים
+![סימון תווים חשודים](screenshots/marked_text.png)  
+🔍 בתמונה: סימון אוטומטי של תווים חשודים או שגויים על סמך ההקשר הלשוני בלבד – גם כאשר המילה נראית "נכונה" מבחינת כתיב.
+
+**In the image:** automatic marking of suspicious or erroneous characters based purely on linguistic context – even if the word appears "correctly" spelled.
+
+---
+
+### הצגת טולטיפ עם הצעות תיקון
+![טולטיפ עם הצעות](screenshots/tooltip_suggestions.png)  
+🛠️ בתמונה: בעת ריחוף מעל תו שסומן כשגוי, נפתח טולטיפ ובו ניתן **לסמן את התו כתקין**, או **לבחור אחת מההצעות לתיקון** – לחיצה תחליף את התו בהתאם.
+
+**In the image:** hovering over a character marked as incorrect opens a tooltip where the user can **mark the character as valid**, or **click one of the suggested corrections** to instantly replace the character.
+
+
 ---
 
 © 2025 Yakobov Software Development. All rights reserved.
